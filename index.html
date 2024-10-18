@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buysharelike.mn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Нүүр</a></li>
+                <li><a href="#services">Үйлчилгээнүүд</a></li>
+                <li><a href="#special">Тусгай үйлчилгээ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Buysharelike.mn</h1>
+            <h2>📈 Бидний Үйлчилгээний Танилцуулга</h2>
+            <p>Манай платформ нь танай бизнесийн мэдээллийг Монголын хамгийн идэвхтэй фэйсбүүк group үүдэд хүргэх, олон мянган лайк дагагч цуглуулах, масс мессеж болон имэйл шэйрлэх боломжийг олгодог төгс шийдэл юм. Үр дүнгээ хурдан шуурхай мэдрээрэй!</p>
+        </section>
+
+        <section id="services">
+            <h2>Үйлчилгээнүүд</h2>
+            
+            <div class="service">
+                <h3>1. Share худалдан авах</h3>
+                <form id="shareForm">
+                    <input type="url" placeholder="URL оруулах" required>
+                    <input type="number" placeholder="Share тоо оруулах" required>
+                    <button type="submit">Худалдан авах</button>
+                </form>
+            </div>
+
+            <div class="service">
+                <h3>2. Лайк болон Дагагч Хэрэглэгч Худалдан Авах</h3>
+                <form id="likeFollowForm">
+                    <select required>
+                        <option value="">Лайк эсвэл Дагагч сонгох</option>
+                        <option value="like">Лайк</option>
+                        <option value="follow">Дагагч</option>
+                    </select>
+                    <input type="url" placeholder="Хаяг эсвэл постний линк оруулах" required>
+                    <input type="number" placeholder="Хүсэж буй тоо оруулах" required>
+                    <button type="submit">Худалдан авах</button>
+                </form>
+            </div>
+
+            <div class="service">
+                <h3>3. Масс Мессеж болон Имэйл Илгээх</h3>
+                <form id="messageForm">
+                    <textarea placeholder="Илгээх текст" required></textarea>
+                    <input type="number" placeholder="Илгээх хүний тоо" required>
+                    <button type="submit">Илгээх</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="special">
+            <h2>Тусгай үйлчилгээ</h2>
+            <h3>Фэйсбүүк Группууд Руу Мэдээлэл Шэйрлэх</h3>
+            <form id="groupShareForm">
+                <select required>
+                    <option value="">Группын төрөл сонгох</option>
+                    <option value="ads">Зар</option>
+                    <option value="interest">Сонирхолын бүлэг</option>
+                </select>
+                <input type="number" placeholder="Шэйрлэх тоо" required>
+                <input type="url" placeholder="Постний линк" required>
+                <button type="submit">Шэйрлэх</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Buysharelike.mn. Бүх эрх хуулиар хамгаалагдсан.</p>
+    </footer>
+
+    <div id="paymentModal" class="modal">
+        <div class="modal-content">
+            <h2>Төлбөр төлөх</h2>
+            <p>Нийт дүн: <span id="totalAmount"></span></p>
+            <img src="qpay_qr.png" alt="QPay QR код">
+            <p>QPay ашиглан төлбөрөө төлнө үү.</p>
+            <button id="closeModal">Хаах</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

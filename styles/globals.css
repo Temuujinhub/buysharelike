@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --primary-color: #4CAF50;     /* Ногоон */
+  --secondary-color: #2196F3;   /* Цэнхэр */
+  --text-color: #212121;        /* Бараан */
+  --background-color: #FAFAFA;  /* Цагаан саарал */
+  --accent-color: #FFC107;      /* Шар */
+}
